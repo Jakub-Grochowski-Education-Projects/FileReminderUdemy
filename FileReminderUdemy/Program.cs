@@ -7,7 +7,9 @@ namespace FileReminderUdemy
     {
         static void Main(string[] args)
         {
-            // Solution for first tast is here
+
+
+            // Solution for first task
             var path = @"C:\Users\j.grochowski\Desktop\WorkSpace-Jakub_Grochowski\slowka.txt";
             var file2 = File.ReadAllText(path);
             String[] words = file2.Split(' ');
@@ -27,7 +29,22 @@ namespace FileReminderUdemy
             }
 
             System.Console.WriteLine("Number of words in slowka.txt file: " + number_of_words);
-            
+
+
+            //Solution for second task, i am using code from first task
+            string longest_word = "";
+            foreach(string line in file)
+            {
+                words = line.Split(' ');
+                foreach (string word in words)
+                {
+                    if (word.Length > longest_word.Length)
+                    {
+                        longest_word = word;
+                    }
+                }
+            }
+            System.Console.WriteLine("longest word in this file is: " + longest_word);
         }
     }
 }

@@ -9,3 +9,6 @@
 - C#
 - .Net Framework 5.0
 - Visual Studio 2019
+
+##Sources
+Exercises and knowlage was from https://www.udemy.com/course/csharp-tutorial-for-beginners/
